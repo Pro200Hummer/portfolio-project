@@ -1,0 +1,14 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  .content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+}
