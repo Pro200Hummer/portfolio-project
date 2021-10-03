@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  background: #17c2a4;
+
+  .content {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+    .about {
+      margin: 25px;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0.36px;
+      text-align: center;
+    }
+
+    .image {
+      display: block;
+      width: 20%;
+      margin: 25px;
+      border-radius: 50%;
+      transition-property: transform;
+      transition-duration: 0.5s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
