@@ -1,41 +1,87 @@
 .container {
   width: 100%;
-  background-color: #87509c;
+  background-color: #ffffff;
   border-radius: 5px 5px 0 0;
 
-    .nav {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      align-items: center;
-      margin: 5px 15px 5px 15px;
+  .nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 15px 5px 15px;
 
-      .link {
-        display: block;
-        padding: 10px;
-        border-radius: 7px;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 18px;
-        text-align: center;
-        text-decoration: none;
+    .link {
+      display: block;
+      padding: 10px;
+      border-radius: 7px;
+      font-size: 18px;
+      line-height: 22px;
+      color: #828282;
+      font-weight: 400;
+      text-align: center;
+      text-decoration: none;
 
-        &:nth-of-type(1n+2) {
-          margin-left: 40px;
-        }
+      &:nth-of-type(1n+2) {
+        margin-left: 40px;
+      }
+    }
+
+    .btnNav {
+      &:hover {
+        color: #070707;
       }
 
-      .btnNav {
-        &:hover {
-          background-color: #643a79;
-          color: #24dcdc;
-        }
-
-        &:active {
-          background-color: #643a79;
-          box-shadow: inset 0 0 5px 1px #643a50;
-        }
+      &:active {
+        box-shadow: inset 0 0 5px 1px #c5c2c3;
       }
     }
   }
+
+  .info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+
+    & h1 {
+      width: 33.3%;
+      font-size: 32px;
+      line-height: 40px;
+      color: #070707;
+    }
+
+    & p {
+      width: 33.3%;
+      font-size: 18px;
+      line-height: 22px;
+      color: #070707;
+    }
+
+    .lang {
+      width: 33.3%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 16px;
+      line-height: 20px;
+      color: #828282;
+
+      & div {
+        width: 20%;
+        transform: rotate(-90deg);
+      }
+      & span:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  .photo{
+    display: block;
+    width: 100%;
+    height: 387px;
+    background: #3c4761;
+  }
+}
