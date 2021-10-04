@@ -1,14 +1,49 @@
-.container{
+.container {
   width: 100%;
-  background: #e7f1f8;
-  .title{
-    padding: 120px 0 5px 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 40px 0;
+
+  .title {
+    font-size: 34px;
+    line-height: 42px;
     text-align: center;
-    color: #3c4761;
-    font-size: 41px;
-    font-weight: 700;
-    line-height: 30.87px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    color: #070707;
   }
+
+  .skills {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .skill {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      transform: scale(1.0);
+      transition-property: transform;
+      transition-duration: 0.5s;
+
+      &:hover{
+        transform: scale(1.05);
+      }
+
+      .skillTitle {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #828282;
+      }
+
+      .skillsImg {
+        width: 70px;
+        height: 70px;
+        display: block;
+      }
+    }
+  }
+
 }
