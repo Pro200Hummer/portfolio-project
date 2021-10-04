@@ -6,13 +6,20 @@ export const About: FC = () => {
     return (
         <div className={style.container}>
             <div className={style.content}>
-                <img src="https://avatars.githubusercontent.com/u/71458258?v=4"
-                     alt="there should be my photo"
-                     className={style.image}
-                />
+                <h2 className={style.title}>About Me</h2>
                 <div className={style.about}>
-                    Hey! My name is Pavel Nikolaychik.<br/>
-                    I am a Front End Developer.
+                    <p>
+                        Hi, I'm Pavel – Front-end developer from Minsk.<br/>
+                        I'm interested in design and everything connected with it.
+                    </p>
+                    <p>
+                        I'm studying at courses "Front-End Development"<br/>
+                        in IT-Incubator.
+                    </p>
+                    <p>
+                        Ready to implement excellent projects<br/>
+                        with wonderful people.
+                    </p>
                 </div>
             </div>
         </div>
