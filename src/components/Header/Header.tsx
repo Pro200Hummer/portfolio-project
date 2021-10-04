@@ -6,9 +6,10 @@ export const Header: FC = () => {
     return (
         <header className={style.container}>
             <nav className={style.nav}>
-                <a href="#" className={`${style.link} ${style.btnNav}`}>Main</a>
+                <a href="#" className={`${style.link} ${style.btnNav}`}>Home</a>
+                <a href="#" className={`${style.link} ${style.btnNav}`}>About me</a>
                 <a href="#" className={`${style.link} ${style.btnNav}`}>Skills</a>
-                <a href="#" className={`${style.link} ${style.btnNav}`}>Projects</a>
+                <a href="#" className={`${style.link} ${style.btnNav}`}>Portfolio</a>
                 <a href="#" className={`${style.link} ${style.btnNav}`}>Contacts</a>
             </nav>
             <div className={style.info}>
