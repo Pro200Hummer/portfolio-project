@@ -11,7 +11,6 @@ export const Header: FC = () => {
                 <a href="#" className={`${style.link} ${style.btnNav}`}>Projects</a>
                 <a href="#" className={`${style.link} ${style.btnNav}`}>Contacts</a>
             </nav>
-            <div>line</div>
             <div className={style.info}>
                 <h1>Pavel Nikalaychik</h1>
                 <p>
