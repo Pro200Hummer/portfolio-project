@@ -11,4 +11,11 @@
     margin: 0 auto;
     border-radius: 5px;
   }
-}
+};
+
+/*@mixin displayFlex($direction $wrap,$just,$align) {
+  display: flex;
+  flex-flow: $direction | $wrap;
+  justify-content: $just;
+  align-items: $align;
+}*/
