@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .imageContainer {
+    width: 150px;
+    height: 150px;
+    background: #3c4761;
+    position: relative;
+
+    .image{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .imageHover {
+      background: #71768a;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .link{
+    display: block;
+    width: 50px;
+    padding: 5px;
+    color: #c5c2c3;
+    text-decoration: none;
+    text-align: center;
+    background: #832121;
+    position: relative;
+    top: -55%;
+    left: 31%;
+  }
+}
