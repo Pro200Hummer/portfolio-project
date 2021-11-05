@@ -18,6 +18,18 @@ const initialState: PortfolioItemType[] = [
         title: "Question/Answer",
         text: "My test project"
     },
+    {
+        href: "https://Pro200Hummer.github.io/custom-toast-notification",
+        image: "",
+        title: "Custom Toast Notification",
+        text: "My test project"
+    },
+    {
+        href: "https://Pro200Hummer.github.io/employees",
+        image: "",
+        title: "Persons List",
+        text: "My test project"
+    },
 ]
 
 export const portfolioReducer = (state = initialState, action: any) => {

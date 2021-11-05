@@ -4,6 +4,7 @@ import {useSelector} from "react-redux";
 import {RootStateType} from "../../app/store";
 import {PortfolioItemType} from "./portfolioReducer";
 import {CardPreviewer} from "./LinkPreviewer/CardPreviewer";
+import Flip from "react-awesome-reveal";
 
 export const Portfolio: FC = () => {
 
@@ -11,7 +12,9 @@ export const Portfolio: FC = () => {
 
     return (
         <div className={style.container}>
-            <h2 className={style.title}>Portfolio</h2>
+            <Flip>
+                <h2 className={style.title}>Portfolio</h2>
+            </Flip>
             <div className={style.portfolio}>
                 {
                     portfolio.map((p, index) => {

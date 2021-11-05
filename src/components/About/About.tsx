@@ -1,12 +1,15 @@
 import React, {FC} from 'react';
 import style from './About.module.scss'
+import Flip from "react-awesome-reveal";
 
 
 export const About: FC = () => {
     return (
         <div className={style.container}>
             <div className={style.content}>
-                <h2 className={style.title}>About Me</h2>
+                <Flip>
+                    <h2 className={style.title}>About Me</h2>
+                </Flip>
                 <div className={style.about}>
                     <p>
                         Hi, I'm Pavel – Front-end developer from Minsk.<br/>

@@ -1,5 +1,5 @@
 import {combineReducers, createStore} from "redux";
-import {skillsReducer} from "../components/Slills/skillsReducer";
+import {skillsReducer} from "../components/Skills/skillsReducer";
 import {portfolioReducer} from "../components/Portfolio/portfolioReducer";
 
 export const rootReducer = combineReducers({
