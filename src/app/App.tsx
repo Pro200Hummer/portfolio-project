@@ -7,10 +7,12 @@ import {Portfolio} from "../components/Portfolio/Portfolio";
 import {RemoteWork} from "../components/Remote Work/RemoteWork";
 import {Contacts} from "../components/Contacts/Contacts";
 import {Footer} from "../components/Footer/Footer";
+import {NavBar} from "../components/NavBar/NavBar";
 
 export const App = () => {
     return (
         <div className={style.wrapper}>
+            <NavBar/>
             <div className={style.content}>
                 <Header/>
                 <About/>
