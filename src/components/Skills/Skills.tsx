@@ -10,7 +10,7 @@ export const Skills: FC = () => {
     const skills = useSelector<RootStateType, SkillType[]>(state => state.skills);
 
     return (
-        <div className={style.container}>
+        <div className={style.container} id={'skills'}>
             <Flip>
                 <h2 className={style.title}>Skills</h2>
             </Flip>

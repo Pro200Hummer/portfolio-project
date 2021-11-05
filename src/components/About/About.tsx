@@ -5,7 +5,7 @@ import Flip from "react-awesome-reveal";
 
 export const About: FC = () => {
     return (
-        <div className={style.container}>
+        <div className={style.container} id={'about'}>
             <div className={style.content}>
                 <Flip>
                     <h2 className={style.title}>About Me</h2>

@@ -4,7 +4,7 @@ import Flip from "react-awesome-reveal";
 
 export const Contacts: FC = () => {
     return (
-        <div className={style.container}>
+        <div className={style.container} id={'contacts'}>
             <Flip>
                 <h2 className={style.title}>Contacts</h2>
             </Flip>

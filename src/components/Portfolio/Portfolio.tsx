@@ -11,7 +11,7 @@ export const Portfolio: FC = () => {
     const portfolio = useSelector<RootStateType, PortfolioItemType[]>(state => state.portfolio)
 
     return (
-        <div className={style.container}>
+        <div className={style.container} id={'portfolio'}>
             <Flip>
                 <h2 className={style.title}>Portfolio</h2>
             </Flip>
