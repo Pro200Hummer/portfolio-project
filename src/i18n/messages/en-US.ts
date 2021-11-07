@@ -8,7 +8,7 @@ export default {
         "navSkillsBtn": 'Skills',
         "navPortfolioBtn": 'Portfolio',
         "navContactsBtn": 'Contacts',
-        "infoBlockTitle": 'Pavel Nikalaychik',
+        "infoBlockTitle": 'Pavel Nikalaichyk',
         "infoBlockAbout": 'Front-end developer 26 years old, Minsk',
         "aboutMeBlockTitle": 'About Me',
         "aboutMeBlockParagraph_1": 'Hi, I\'m Pavel - Front-end developer from Minsk. I am interested in development and everything related to it.',
