@@ -12,16 +12,13 @@ export const About: FC = () => {
                 </Flip>
                 <div className={style.about}>
                     <p>
-                        Hi, I'm Pavel – Front-end developer from Minsk.<br/>
-                        I'm interested in design and everything connected with it.
+                        Hi, I'm Pavel – Front-end developer from Minsk. I'm interested in design and everything connected with it.
                     </p>
                     <p>
-                        I'm studying at courses "Front-End Development"<br/>
-                        in IT-Incubator.
+                        I'm studying at courses "Front-End Development" in IT-Incubator.
                     </p>
                     <p>
-                        Ready to implement excellent projects<br/>
-                        with wonderful people.
+                        Ready to implement excellent projects with wonderful people.
                     </p>
                 </div>
             </div>

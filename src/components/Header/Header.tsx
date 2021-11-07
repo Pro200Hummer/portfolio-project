@@ -5,10 +5,11 @@ export const Header: FC = () => {
     return (
         <header className={style.container} id={'home'}>
             <div className={style.info}>
-                <h1 className={style.title}>Pavel Nikalaychik</h1>
+                <h1 className={style.title}>
+                    Pavel Nikalaychik
+                </h1>
                 <p className={style.aboutMe}>
-                    Front-end developer<br/>
-                    26 years old, Minsk
+                    Front-end developer 26 years old, Minsk
                 </p>
                 <div className={style.lang}>
                     <div>

@@ -8,20 +8,22 @@ import {RemoteWork} from "../components/Remote Work/RemoteWork";
 import {Contacts} from "../components/Contacts/Contacts";
 import {Footer} from "../components/Footer/Footer";
 import {NavBar} from "../components/NavBar/NavBar";
-
+import {I18nProvider, LOCALES} from "../i18n";
 export const App = () => {
     return (
-        <div className={style.wrapper}>
-            <NavBar/>
-            <div className={style.content}>
-                <Header/>
-                <About/>
-                <Skills/>
-                <Portfolio/>
-                <RemoteWork/>
-                <Contacts/>
-                <Footer/>
+        <I18nProvider locale={LOCALES.ENGLISH}>
+            <div className={style.wrapper}>
+                <NavBar/>
+                <div className={style.content}>
+                    <Header/>
+                    <About/>
+                    <Skills/>
+                    <Portfolio/>
+                    <RemoteWork/>
+                    <Contacts/>
+                    <Footer/>
+                </div>
             </div>
-        </div>
+        </I18nProvider>
     )
 };
