@@ -3,7 +3,7 @@ import {IntlProvider} from "react-intl";
 import {LOCALES} from "./locales";
 import messages from "./messages";
 
-type Locales = 'en-US' | 'ru-RU';
+export type Locales = 'en-US' | 'ru-RU';
 export interface Provider extends PropsWithChildren<any> {
     locale: Locales
 }

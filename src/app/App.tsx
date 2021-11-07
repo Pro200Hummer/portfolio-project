@@ -1,4 +1,6 @@
 import React from "react";
+import {useSelector} from "react-redux";
+import {RootStateType} from "./store";
 import style from "../commonStyles/Common.module.scss";
 import {Header} from "../components/Header/Header";
 import {About} from "../components/About/About";
@@ -8,11 +10,15 @@ import {RemoteWork} from "../components/Remote Work/RemoteWork";
 import {Contacts} from "../components/Contacts/Contacts";
 import {Footer} from "../components/Footer/Footer";
 import {NavBar} from "../components/NavBar/NavBar";
-import {I18nProvider, LOCALES} from "../i18n";
+import {I18nProvider} from "../i18n";
+import {Locales} from "../i18n/Provider";
+
 
 export const App = () => {
+    const lang = useSelector<RootStateType, Locales>(state => state.app.lang)
+
     return (
-        <I18nProvider locale={LOCALES.RUSSIAN}>
+        <I18nProvider locale={lang}>
             <div className={style.wrapper}>
                 <NavBar/>
                 <div className={style.content}>
