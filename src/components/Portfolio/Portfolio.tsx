@@ -5,6 +5,7 @@ import {RootStateType} from "../../app/store";
 import {PortfolioItemType} from "./portfolioReducer";
 import {CardPreviewer} from "./LinkPreviewer/CardPreviewer";
 import Flip from "react-awesome-reveal";
+import {FormattedMessage} from "react-intl";
 
 export const Portfolio: FC = () => {
 
@@ -13,7 +14,9 @@ export const Portfolio: FC = () => {
     return (
         <div className={style.container} id={'portfolio'}>
             <Flip>
-                <h2 className={style.title}>Portfolio</h2>
+                <h2 className={style.title}>
+                    <FormattedMessage id={"portfolioBlockTitle"}/>
+                </h2>
             </Flip>
             <div className={style.portfolio}>
                 {

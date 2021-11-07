@@ -1,15 +1,16 @@
 import React, {FC} from "react";
 import style from "./Header.module.scss";
+import {FormattedMessage} from "react-intl";
 
 export const Header: FC = () => {
     return (
         <header className={style.container} id={'home'}>
             <div className={style.info}>
                 <h1 className={style.title}>
-                    Pavel Nikalaychik
+                    <FormattedMessage id={"infoBlockTitle"}/>
                 </h1>
                 <p className={style.aboutMe}>
-                    Front-end developer 26 years old, Minsk
+                    <FormattedMessage id={"infoBlockAbout"}/>
                 </p>
                 <div className={style.lang}>
                     <div>

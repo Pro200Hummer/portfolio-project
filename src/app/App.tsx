@@ -9,9 +9,10 @@ import {Contacts} from "../components/Contacts/Contacts";
 import {Footer} from "../components/Footer/Footer";
 import {NavBar} from "../components/NavBar/NavBar";
 import {I18nProvider, LOCALES} from "../i18n";
+
 export const App = () => {
     return (
-        <I18nProvider locale={LOCALES.ENGLISH}>
+        <I18nProvider locale={LOCALES.RUSSIAN}>
             <div className={style.wrapper}>
                 <NavBar/>
                 <div className={style.content}>

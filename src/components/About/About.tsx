@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import style from './About.module.scss'
 import Flip from "react-awesome-reveal";
+import {FormattedMessage} from "react-intl";
 
 
 export const About: FC = () => {
@@ -8,18 +9,14 @@ export const About: FC = () => {
         <div className={style.container} id={'about'}>
             <div className={style.content}>
                 <Flip>
-                    <h2 className={style.title}>About Me</h2>
+                    <h2 className={style.title}>
+                        <FormattedMessage id={"aboutMeBlockTitle"}/>
+                    </h2>
                 </Flip>
                 <div className={style.about}>
-                    <p>
-                        Hi, I'm Pavel – Front-end developer from Minsk. I'm interested in design and everything connected with it.
-                    </p>
-                    <p>
-                        I'm studying at courses "Front-End Development" in IT-Incubator.
-                    </p>
-                    <p>
-                        Ready to implement excellent projects with wonderful people.
-                    </p>
+                    <p><FormattedMessage id={"aboutMeBlockParagraph_1"}/></p>
+                    <p><FormattedMessage id={"aboutMeBlockParagraph_2"}/></p>
+                    <p><FormattedMessage id={"aboutMeBlockParagraph_3"}/></p>
                 </div>
             </div>
         </div>

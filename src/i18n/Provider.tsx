@@ -8,7 +8,8 @@ export interface Provider extends PropsWithChildren<any> {
     locale: Locales
 }
 
-const LangProvider: FC<Provider> = props => {
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+const Provider: FC<Provider> = props => {
     const {children, locale = LOCALES.ENGLISH} = props
     return (
         <IntlProvider
@@ -21,4 +22,4 @@ const LangProvider: FC<Provider> = props => {
     )
 };
 
-export default LangProvider;
+export default Provider;
