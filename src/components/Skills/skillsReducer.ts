@@ -1,3 +1,5 @@
+import {Icons} from '../../resources/images'
+
 export interface SkillType {
     src: string
     name: string
@@ -5,31 +7,31 @@ export interface SkillType {
 
 const initialState: SkillType[] = [
     {
-        src: "https://i.ya-webdesign.com/images/html-5-logo-png-6.png",
+        src: Icons.html,
         name: "HTML"
     },
     {
-        src: "https://w7.pngwing.com/pngs/454/464/png-transparent-css3-cascading-style-sheets-logo-html-markup-language-others-miscellaneous-blue-angle.png",
+        src: Icons.css,
         name: "CSS"
     },
     {
-        src: "https://e7.pngegg.com/pngimages/602/440/png-clipart-javascript-open-logo-number-js-angle-text.png",
+        src: Icons.js,
         name: "Java Script"
     },
     {
-        src: "https://im0-tub-by.yandex.net/i?id=03b68d990d1f7b37733fbf1d9b7894f4&n=13",
+        src: Icons.ts,
         name: "Type Script"
     },
     {
-        src: "https://e7.pngegg.com/pngimages/791/139/png-clipart-react-native-web-application-javascript-google-scholar-logo-symmetry-web-application.png",
+        src: Icons.react,
         name: "React JS"
     },
     {
-        src: "https://tabris.com/wp-content/uploads/2020/08/redux-logo-e1597223260395.png",
+        src: Icons.redux,
         name: "Redux"
     },
     {
-        src: "https://media-exp1.licdn.com/dms/image/C4E0BAQEXR4j_oeeNXw/company-logo_200_200/0?e=2159024400&v=beta&t=74GXAHbeVm7_T3oIx3VwnsdRwffQlPBKlUPQsTcxRkg",
+        src: Icons.axios,
         name: "Axios"
     },
 ];
