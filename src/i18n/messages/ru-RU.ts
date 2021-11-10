@@ -16,7 +16,7 @@ export default {
         "aboutMeBlockParagraph_3": 'Готов реализовывать отличные проекты с замечательными людьми.',
         "skillsBlockTitle": 'Навыки',
         "portfolioBlockTitle": 'Портфолио',
-        "contactsBlockTitle": 'Контакты',
+        "contactsBlockTitle": 'Связаться со мной',
         "footerBlockTitle": 'Павел Николайчик'
     }
 }

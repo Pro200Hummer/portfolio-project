@@ -16,7 +16,7 @@ export default {
         "aboutMeBlockParagraph_3": 'I am ready to implement great projects with wonderful people.',
         "skillsBlockTitle": 'Skills',
         "portfolioBlockTitle": 'Portfolio',
-        "contactsBlockTitle": 'Contacts',
+        "contactsBlockTitle": 'Contact with me',
         "footerBlockTitle": 'Pavel Nikalaichyk'
     }
 }
