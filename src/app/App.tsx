@@ -6,7 +6,6 @@ import {Header} from "../components/Header/Header";
 import {About} from "../components/About/About";
 import {Skills} from "../components/Skills/Skills";
 import {Portfolio} from "../components/Portfolio/Portfolio";
-import {RemoteWork} from "../components/Remote Work/RemoteWork";
 import {Contacts} from "../components/Contacts/Contacts";
 import {Footer} from "../components/Footer/Footer";
 import {NavBar} from "../components/NavBar/NavBar";
@@ -26,7 +25,6 @@ export const App = () => {
                     <About/>
                     <Skills/>
                     <Portfolio/>
-                    <RemoteWork/>
                     <Contacts/>
                     <Footer/>
                 </div>

@@ -1,5 +1,6 @@
 import React, {FC, useState} from "react";
 import style from './CardPreviewer.module.scss'
+import {Zoom} from "react-awesome-reveal";
 
 type PreviewerPops = {
     image: string
@@ -22,23 +23,24 @@ export const CardPreviewer: FC<PreviewerPops> = props => {
     }
 
     return (
-        <div className={style.container}>
-            <div className={style.imageContainer}>
-                <img
-                    src={props.image}
-                    alt="#"
-                    className={isShown ? style.imageHover : style.image}
-                    onMouseEnter={() => onMouseHandler(true)}
-                    onMouseLeave={() => onMouseHandler(false)}
-                />
-                {isShown && (
-                    <Link href={props.href} onMouseHandler={onMouseHandler}/>
-                )}
+        <Zoom>
+            <div className={style.container}>
+                <div className={style.imageContainer}>
+                    <img
+                        src={props.image}
+                        alt="#"
+                        className={isShown ? style.imageHover : style.image}
+                        onMouseEnter={() => onMouseHandler(true)}
+                        onMouseLeave={() => onMouseHandler(false)}
+                    />
+                    {isShown && (
+                        <Link href={props.href} onMouseHandler={onMouseHandler}/>
+                    )}
+                </div>
+                <h5>{props.title}</h5>
+                <p>{props.text}</p>
             </div>
-            <h5>{props.title}</h5>
-            <p>{props.text}</p>
-
-        </div>
+        </Zoom>
     );
 };
 
@@ -48,7 +50,9 @@ const Link: FC<LinkProps> = props => {
         target="_blank"
         rel="noreferrer"
         className={style.link}
-        onMouseEnter={() => props.onMouseHandler(true)}>
+        onMouseEnter={() => props.onMouseHandler(true)}
+        onBlur={() => props.onMouseHandler(false)}
+    >
         Show
     </a>
 };
