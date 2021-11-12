@@ -39,7 +39,6 @@ export const CardPreviewer: FC<PreviewerPops> = props => {
                 </div>
                 <h5>{props.title}</h5>
                 <p>{props.text}</p>
-
             </div>
         </Zoom>
     );
@@ -51,7 +50,9 @@ const Link: FC<LinkProps> = props => {
         target="_blank"
         rel="noreferrer"
         className={style.link}
-        onMouseEnter={() => props.onMouseHandler(true)}>
+        onMouseEnter={() => props.onMouseHandler(true)}
+        onBlur={() => props.onMouseHandler(false)}
+    >
         Show
     </a>
 };
